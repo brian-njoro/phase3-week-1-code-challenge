@@ -7,6 +7,9 @@ class Magazine:
         Magazine._all.append(self)
         self._contributors = []
 
+    def category(self):
+        return self.category    
+
     @classmethod    
     def all(cls):
         return cls._all
@@ -15,5 +18,13 @@ class Magazine:
         self._contributors.append(author)
 
     def contributors(self):
-        return self._contributors    
+        return self._contributors 
+
+    @classmethod
+    def find_by_name(cls, name):
+        for magazine in cls._all:
+            if magazine.name() == name:
+                return magazine 
+            else:
+                print("!!ERROR!!")  
             
