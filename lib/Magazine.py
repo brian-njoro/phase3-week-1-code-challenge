@@ -43,5 +43,10 @@ class Magazine:
             return magazine._article_titles() #unable to make instance method _article_titles accessible in the class method
         else:
             return []
-        
-    def contributing    
+    
+    #also uncertain
+    def contributing_authors(self):
+        authors = {}
+        for article in self._articles:
+            pass
+        #return [author for author, count in authors.items() if count > 2]
