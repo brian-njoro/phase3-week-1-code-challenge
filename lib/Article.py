@@ -12,3 +12,9 @@ class Article():
     @classmethod
     def all(cls):
         return cls.all_articles    
+    
+    def author(self):
+        return self._author
+    
+    def magazine(self):
+        return self._magazine
