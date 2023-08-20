@@ -1,7 +1,7 @@
 class Author:
     def __init__(self, name):
-        self.name = name
+        self._name = name
 
-    def Author_name(self):
-        return self.name
+    def name(self):
+        return self._name
         
